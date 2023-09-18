@@ -1,0 +1,361 @@
+:root {
+    --page-padding: 4rem;
+    --info-max-width: 35vw;
+    --widget-radius: 2vmax;
+    --widget-row-width: 28vw;
+    --widget-margin: 0.5vw;
+    --widget-padding: 1vw;
+    --widget-width: 12vw;
+    --widget-height: 12vw;
+    --widget-width-2: 25vw;
+    --widget-height-2: 25vw;
+    --widget-video-width-2: 25.5vw;
+    --widget-video-margin-2: 0px -0.25vw;
+    --widget-icon-width: 3vw;
+    --widget-icon-height: 3vw;
+    --widget-icon-margin: 0.5vw 0px;
+    --widget-icon-radius: 0.75vw;
+    --widget-btn-padding: 0.4vw 1vw !important;
+    --widget-btn-margin-top: 0.5vw !important;
+    --widget-btn-font-size: 1vw;
+    --widget-btn-font-weight: 600;
+    --widget-btn-border-radius: 2vw;
+    --widget-h3-size: 1.5vw;
+    --widget-h4-size: 1.25vw;
+    --widget-h5-size: 1vw;
+    --widget-bg: #000;
+    --widget-color: #fff;
+    --widget-btn-bg: #fff;
+    --widget-btn-color: #000;
+}
+
+.yt-Wid {
+    --widget-bg: #fff0f0 !important;
+    --widget-color: #000 !important;
+    --widget-btn-bg: #eb0404;
+    --widget-btn-color: #fff;
+}
+
+.ig-Wid {
+    --widget-bg: #fff0f0 !important;
+    --widget-color: #000 !important;
+    --widget-btn-bg: #eb0404;
+    --widget-btn-color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fef0ea;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 9px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #eee;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter", sans-serif !important;
+}
+
+a,
+button {
+    cursor: pointer
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a:active,
+a:hover,
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: var(--page-padding);
+}
+
+#infoDiv {
+    position: sticky;
+    top: var(--page-padding);
+    min-height: calc(100vh - 2*(var(--page-padding)));
+    max-width: var(--info-max-width);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px 2vw 0px 0px;
+}
+
+#PageLogo {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 12.5vh;
+    background-color: #000000;
+    border: 2px solid #000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#PageLogo img {
+    width: 22vh;
+    height: 22vh;
+    padding-top: 0.5vh;
+}
+
+#infoDiv h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+#infoDiv h4 {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+#widgetDiv {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#widget-row-1 {
+    max-width: var(--widget-row-width);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#widget-row-2 {
+    max-width: var(--widget-row-width);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.widgetB {
+    border-radius: var(--widget-radius);
+    margin: var(--widget-margin);
+    padding: var(--widget-padding);
+    background-color: var(--widget-bg);
+    color: var(--widget-color);
+    overflow: hidden;
+}
+
+.widget-1-1 {
+    width: var(--widget-width);
+    height: var(--widget-height);
+}
+
+.widget-2-1 {
+    width: var(--widget-width-2);
+    height: var(--widget-height);
+}
+
+.widget-2-2 {
+    width: var(--widget-width-2);
+    height: var(--widget-height-2);
+}
+
+.widget-2-2 video {
+    height: var(--widget-video-width-2) !important;
+    margin: var(--widget-video-margin-2) !important;
+    border: 0px;
+}
+
+.widget-video {
+    padding: 0px !important;
+}
+
+.widget-icon h3,
+h5 {
+    text-wrap: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.widget-icon h3 {
+    font-size: var(--widget-h3-size);
+}
+
+.widget-icon h5 {
+    font-size: var(--widget-h5-size);
+}
+
+.widget-icon h4 {
+    font-size: var(--widget-h4-size);
+    overflow-wrap: break-word;
+}
+
+.widget-icon .iconDiv {
+    width: var(--widget-icon-width);
+    height: var(--widget-icon-height);
+    margin: var(--widget-icon-margin);
+    border-radius: var(--widget-icon-radius);
+    overflow: hidden;
+}
+
+.widget-icon .icon {
+    width: var(--widget-icon-width);
+    height: var(--widget-icon-height);
+    border-radius: var(--widget-icon-radius);
+}
+
+.widget-icon button {
+    outline: none;
+    border: none;
+    background-color: var(--widget-btn-bg);
+    color: var(--widget-btn-color);
+    padding: var(--widget-btn-padding);
+    margin-top: var(--widget-btn-margin-top);
+    font-size: var(--widget-btn-font-size);
+    font-weight: var(--widget-btn-font-weight);
+    border-radius: var(--widget-btn-border-radius);
+}
+
+@media only screen and (max-width: 1180px) {
+    :root {
+        --page-padding: 3vw;
+        --info-max-width: 50vw;
+        --widget-row-width: 35vw;
+        --widget-margin: 0.5vw;
+        --widget-padding: 1vw;
+        --widget-width: 16vw;
+        --widget-height: 16vw;
+        --widget-width-2: 32vw;
+        --widget-height-2: 32vw;
+        --widget-video-width-2: 32.5vw;
+        --widget-video-margin-2: 0px -0.25vw;
+        --widget-icon-width: 4.5vw;
+        --widget-icon-height: 4.5vw;
+        --widget-icon-margin: 0.7vw 0px;
+        --widget-icon-radius: 1vw;
+        --widget-btn-padding: 0.6vw 1vw !important;
+        --widget-btn-margin-top: 0.6vw !important;
+        --widget-btn-font-size: 1.4vw;
+        --widget-btn-font-weight: 600;
+        --widget-btn-border-radius: 2vw;
+        --widget-h3-size: 1.7vw;
+        --widget-h4-size: 1.5vw;
+        --widget-h5-size: 1.4vw;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: var(--page-padding);
+    }
+
+#infoDiv h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+    #infoDiv {
+        position: relative;
+        top: 0px;
+        min-height: 0px;
+        max-width: var(--info-max-width);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0px 0px 5vh 0px;
+    }
+
+    :root {
+        /*1vw = 3.4px*/
+        --page-padding: 3vw;
+        --info-max-width: 90vw;
+        --widget-row-width: 38vw;
+        --widget-margin: 0.5vw;
+        --widget-padding: 1vw;
+        --widget-width: 18vw;
+        --widget-height: 18vw;
+        --widget-width-2: 37vw;
+        --widget-height-2: 37vw;
+        --widget-video-width-2: 38vw;
+        --widget-video-margin-2: 0px -0.5vw;
+        --widget-icon-width: 5vw;
+        --widget-icon-height: 5vw;
+        --widget-icon-margin: 1vw 0px;
+        --widget-icon-radius: 1vw;
+        --widget-btn-padding: 1vw 1.3vw !important;
+        --widget-btn-margin-top: 0.8vw !important;
+        --widget-btn-font-size: 1.4vw;
+        --widget-btn-font-weight: 600;
+        --widget-btn-border-radius: 2vw;
+        --widget-h3-size: 1.7vw;
+        --widget-h4-size: 1.5vw;
+        --widget-h5-size: 1.4vw;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    :root {
+        /*1vw = 3.4px*/
+        --page-padding: 5vw 3vw;
+        --info-max-width: 94vw;
+        
+        --widget-row-width: 94vw;
+        --widget-margin: 2vw;
+        --widget-padding: 3vw;
+        --widget-width: 40vw;
+        --widget-height: 40vw;
+        --widget-width-2: 84vw;
+        --widget-height-2: 84vw;
+        --widget-video-width-2: 85vw;
+        --widget-video-margin-2: 0px -0.5vw;
+        --widget-icon-width: 12vw;
+        --widget-icon-height: 12vw;
+        --widget-icon-margin: 2vw 0px;
+        --widget-icon-radius: 3vw;
+        --widget-btn-padding: 1.5vw 3vw !important;
+        --widget-btn-margin-top: 1.3vw !important;
+        --widget-btn-font-size: 3vw;
+        --widget-btn-font-weight: 600;
+        --widget-btn-border-radius: 6vw;
+        --widget-h3-size: 4vw;
+        --widget-h4-size: 3vw;
+        --widget-h5-size: 3.6vw;
+
+    }
+}
+
+@media only screen and (orientation: portrait) {}
